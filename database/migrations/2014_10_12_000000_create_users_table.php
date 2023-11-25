@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->integer('role_id')->default(2);
+            $table->integer('active')->default(1);
         });
     }
 
